@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFBFB"
+    tools:context=".Register">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Content inside ScrollView goes here -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="-30dp"
+                    app:srcCompat="@drawable/regbg2"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:elevation="7dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/reg_rounded"
+                android:padding="15dp">
+
+                <TextView
+                    android:text="@string/register"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#9C767A"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2E2E2E"
+                        android:hint="@string/name"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/rollNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#2E2E2E"
+                        android:hint="@string/roll_number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/email"
+                        android:hint="@string/email"
+                        android:textColor="#2E2E2E"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:hintTextColor="@color/black"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/password"
+                        android:hint="@string/password"
+                        android:textColor="#2E2E2E"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:text="@string/register"
+                    android:textColor="#FFD3D3D3"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#9C767A"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/loginNow"
+                    android:text="@string/click_here_to_login"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:textColor="#9C767A"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

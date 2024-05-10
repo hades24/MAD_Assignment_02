@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Gadget Munky</string>
+    <string name="logout">logout</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+
+    <string name="register">Register</string>
+    <string name="click_here_to_login">click here to login</string>
+    <string name="click_to_register">click to register</string>
+    <string name="roll_number">Enter your SRN</string>
+    <string name="name">Enter your name</string>
+
+</resources>

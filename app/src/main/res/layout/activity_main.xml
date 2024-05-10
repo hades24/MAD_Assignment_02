@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#C4DFE6"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <!-- Content inside ScrollView goes here -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#272727"
+                        android:textSize="16dp"
+                        android:text="Swipe right to view developer's info-->"/>
+                </LinearLayout>
+
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="horizontal"
+                    android:scrollbarStyle="outsideOverlay">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="600dp"
+                            android:background="@drawable/main_rounded"
+                            android:layout_marginHorizontal="20dp"
+
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="400dp"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="10dp"
+                                    android:textColor="#272727"
+                                    android:textStyle="bold"
+                                    android:text="User-Info:"
+                                    android:textSize="30sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="70dp"
+                                    android:gravity="center">
+                                    <ImageView
+                                        android:layout_width="120dp"
+                                        android:layout_height="120dp"
+                                        android:background="@drawable/userprofile"/>
+                                </LinearLayout>
+
+                                <TextView
+                                    android:id="@+id/user_details2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:gravity="center"
+                                    android:text="Hello World!" />
+                                <TextView
+                                    android:id="@+id/user_details3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:gravity="center"
+                                    android:text="Hello World!" />
+                                <TextView
+                                    android:id="@+id/user_details"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:gravity="center"
+                                    android:text="Hello World!" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center">
+
+                                <Button
+                                    android:id="@+id/logout"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:backgroundTint="#272727"
+                                    android:textColor="#E3E3E3"
+                                    android:text="@string/logout" />
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="350dp"
+                            android:layout_height="600dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/main_rounded"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:textSize="19dp"
+                                    android:layout_marginBottom="20dp"
+                                    android:textStyle="bold"
+                                    android:text="MAD Assignment-1 By: "/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:layout_marginBottom="10dp"
+                                    android:textSize="15dp"
+                                    android:text="Manjunath R (R21EF015)"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Piyush Sharma (R21EF025)"
+                                    android:textColor="#272727" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:textSize="15dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Mukesh M Suthar (R21EF017)"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#272727"
+                                    android:textSize="15dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Arudhra Chandrasekaran (R21EF045)"/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
